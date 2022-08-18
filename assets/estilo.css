@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0 0.3rem;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: var(--negro);
+}
+
+a:hover{
+    color: var(--azul);
+}
+
+:root{
+    --fondo: #FFFFFF;
+    --blancoOpaco: #f9f5f2;
+    --azul: #5d3bef;
+    --morado: #8e7bef;
+    --negro: #222222;
+    --gris: #423f40;
+    --grisClaro: #f9f6ff;
+}
+
+.header{
+    max-width: calc(100vw - 0.5rem);
+    overflow: hidden;
+}
+
+.header--nav{
+    display: flex;
+    padding-top: 10px;
+    justify-content:end;
+}
+
+.nav--menu{
+    width: calc(100% - 0.3rem);
+    min-height: calc(100vh - 50px);
+    background-color: var(--grisClaro);
+    font-size: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    padding: 0;
+    left: 0;
+    top: 70px;
+}
+
+.nav--menu.visible{
+    display: flex;
+    z-index: 100;
+}
+
+.header--barras{
+    overflow: hidden;
+    position: absolute;
+    transform: rotate(-30deg);
+    max-width: 290px;
+    height: 9rem;
+    top: 230px;
+    left: 3.5rem;
+    z-index: -10;
+    opacity: 40%;
+    display: grid;
+    grid-template-columns: 75% 25% ;
+
+}
+
+.barraMorada{
+    background-color: var(--morado);
+    margin: 5px;
+    width: 200px;
+    height: 2.5rem;
+    border-radius: 15px;
+}
+
+.barra3{
+    width: 290px;
+    grid-column: 1/3;
+}
+
+.section--h1{
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--negro);
+}
+
+.section--h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+.header--section{
+    margin-top: 2rem;
+    width: calc(100% - 0.3rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section--div2{
+    order: -1;
+}
+
+.section--div3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section--icon{
+    position: relative;
+    bottom: 20px;
+    margin: 0px 15px;
+    z-index: 10;
+    background-color: var(--morado);
+    border: none;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.icon{
+    width: 24px;
+    display: inline-block;
+}
+
+
+.section--contacto{
+    background-color: var(--azul);
+    color: var(--fondo);
+    width: 100%;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.main--acerca{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main--habilidades{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.habilidades--div1,.habilidades--div2,.habilidades--div3{
+    background-color: var(--blancoOpaco);
+}
+
+.habilidades--div1,.habilidades--div2,.habilidades--div3{
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habilidades--div3{
+    display: none;
+}
+
+.habilidades--h2{
+    text-align: center;
+    margin-bottom: 10px;
+    grid-column: 1 / 4;
+}
+
+.habilidades--p{
+    font-size: 12px;
+    grid-column: 1 / 3;
+    color: var(--gris);
+}
+
+.main--experiencia{
+    text-align: center;
+}
+
+.experiencia--div1,.experiencia--div2,.experiencia--div3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.main--portafolios{
+    width: calc(100vw - 0.3rem);
+    text-align: center;
+}
+
+.portafolios--div{
+    overflow: hidden;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.portafolios--img1{
+    grid-column: 1/ 3;
+}
+
+.portafolios--img4{
+    grid-column: 1/ 3;
+}
+
+.footer{
+    margin-top: 50px;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer--h2{
+    grid-column: 1/3;
+    margin-bottom: 2rem;
+}
+
+@media ( min-width: 700px ) {
+
+    .body{
+        max-width: calc(100vw - 2rem);
+    }
+    
+    .header--nav{
+        height: 70px;
+    }
+
+    .nav--icon{
+        display: none;
+    }
+
+    .nav--menu{
+        width: 100%;
+        height: 50px;
+        background-color: var(--fondo);
+        z-index: 0;
+        position: static;
+        min-height: 50px;
+        font-size: 14px;
+        margin: 0;
+        display: flex;
+        justify-content: end;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav--item{
+        margin: 0;
+    }
+
+    .header--section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    .header--section__img{
+        order: 1;
+        grid-column: 1/3;
+    }
+
+    .section--div3__icon{
+        margin-bottom: 1rem;
+    }
+
+    .section--div1{
+        grid-row: 1/3;
+    }
+
+    .section--div2{
+        align-items: center;
+        order: 2;
+    }
+
+    .section--h1{
+        margin-bottom: 1rem;
+    }
+
+    .section--div3{
+        align-items: flex-start;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        order: 3;
+        margin-top: 1rem;
+    }
+
+    .section--contacto{
+        width: 60%;
+    }
+
+    .header--barras{
+        top: 130px;
+    }
+
+    .main--habilidades{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    
+    }
+    
+    .habilidades--div3{
+        padding: 5px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portafolios--div{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        max-width: calc(100vw - 0.5rem);
+        margin-left: 3rem;
+        overflow: hidden;
+    }
+
+    .portafolios--img{
+        max-width: 20%;
+    }
+
+}
