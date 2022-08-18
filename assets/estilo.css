@@ -311,12 +311,14 @@ a:hover{
     .header--section{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        
+        column-gap: 0.5rem;
     }
 
     .header--section__img{
         order: 1;
         grid-column: 1/3;
+        width: 100%;
+        height: 100%;
     }
 
     .section--div3__icon{
@@ -324,6 +326,9 @@ a:hover{
     }
 
     .section--div1{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
         grid-row: 1/3;
     }
 
