@@ -219,7 +219,7 @@ a:hover{
 }
 
 .main--portafolios{
-    width: calc(100vw - 0.3rem);
+    width: 100%;
     text-align: center;
 }
 
@@ -227,7 +227,6 @@ a:hover{
     overflow: hidden;
     width: 100%;
     display: grid;
-    justify-items: center;
     align-items: center;
     margin-top: 2rem;
     row-gap: 1rem;
@@ -237,10 +236,19 @@ a:hover{
 
 .portafolios--img1{
     grid-column: 1/ 3;
+    width: 100%;
+    height: 100%;
+}
+
+.portafolios--img2,.portafolios--img3{
+    width: 100%;
+    height: 100%;
 }
 
 .portafolios--img4{
     grid-column: 1/ 3;
+    width: 100%;
+    height: 100%;
 }
 
 .footer{
